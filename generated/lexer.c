@@ -766,7 +766,8 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 YY_RULE_SETUP
 #line 7 "../lex/lexer.l"
-{ check_word(yytext); }
+{
+    put_word(yytext); }
 	YY_BREAK
 case 2:
 /* rule 2 can match eol */

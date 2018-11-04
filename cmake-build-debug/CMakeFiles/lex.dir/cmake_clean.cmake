@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "../generated/lexer.c"
-  "CMakeFiles/lex.dir/main/myscanner.c.o"
+  "CMakeFiles/lex.dir/main/main.c.o"
   "CMakeFiles/lex.dir/generated/lexer.c.o"
   "lex.pdb"
   "lex"

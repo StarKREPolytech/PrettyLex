@@ -3,18 +3,47 @@
 #include <assert.h>
 #include <stdbool.h>
 #include <string.h>
+#include <ctype.h>
 
 #define CHUNK_SIZE 1024
 
+struct pair {
+    char *key;
+    unsigned times;
+};
+
+static struct pair words[3] = {
+        {.key = "SELECT", .times = 0},
+        {.key = "FROM", .times = 0},
+        {.key = "WHERE", .times = 0}
+};
+
 static FILE *output_file = NULL;
+
+static void to_uppercase(char *string)
+{
+    unsigned position = 0;
+    while (true) {
+        const char c = string[position];
+        if (c != '\0') {
+            string[position] = (char) toupper(c);
+        } else {
+            break;
+        }
+    }
+}
 
 static void print_result(const char *word, const char letter, const unsigned times)
 {
     fprintf(output_file, "%s %c %d\n", word, letter, times);
 }
 
-void check_word(const char *word)
+
+void put_word(char *word)
 {
+    to_uppercase(word);
+    if (strcmp()word)
+
     if (yyleng > 1) {
         const size_t last = yyleng - 1;
         unsigned times = 1;

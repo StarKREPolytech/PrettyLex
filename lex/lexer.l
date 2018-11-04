@@ -4,7 +4,7 @@
 %option nounput yylineno
 
 %%
-[a-zA-Z0-9]{2,} { check_word(yytext); }
+([S|s][E|e][L|l][E|e][C|c][T|t])|([W|w][H|h][E|e][R|r][E|e])|([F|f][R|r][O|o][M|m]) { put_word(yytext); }
 .|\n ;
 %%
 

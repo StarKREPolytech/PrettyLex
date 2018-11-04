@@ -15,6 +15,6 @@ extern size_t yyleng;
 
 extern struct _IO_FILE *yyin;
 
-void check_word(const char *word);
+void put_word(char *word);
 
 #endif //HEADER_H
