@@ -4,7 +4,7 @@ project(lex C)
 
 set(CMAKE_C_STANDARD 11)
 
-#include_directories(${CMAKE_CURRENT_BINARY_DIR})
+include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 include_directories(main)
 
@@ -34,12 +34,12 @@ endif ()
 add_executable(
         lex
         #headers:
-        main/myscanner.h
+        main/header.h
         #source:
-        main/myscanner.c
+        main/main.c
         #generated lex file:
         generated/lexer.c
-)
+        )
 
 #Passing by Lex files and generate C files:
 #Not the best idea because of lex uses global variables:

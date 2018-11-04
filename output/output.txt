@@ -1,0 +1,11 @@
+22 2 2
+3ecc c 2
+xccc c 3
+aaaadddd a 4
+aaaadddd d 4
+ddgdvvs d 2
+ddgdvvs v 2
+edvvewcwscv v 2
+ssvddvvs s 2
+ssvddvvs d 2
+ssvddvvs v 2
