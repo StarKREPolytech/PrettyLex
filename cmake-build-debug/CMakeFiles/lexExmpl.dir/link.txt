@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblexExmpl.a  CMakeFiles/lexExmpl.dir/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/scanner.c.o
+/usr/bin/ranlib liblexExmpl.a

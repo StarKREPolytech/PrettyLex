@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+6a53246101d6a60b00ec7049347a924c ../generated
+bd2b2f43efb7b67a82d72efc70b3d928 ../generated/lexer.c

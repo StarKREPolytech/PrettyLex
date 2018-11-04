@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/lex.dir/main/myscanner.c.o CMakeFiles/lex.dir/generated/lexer.c.o  -o lex 
