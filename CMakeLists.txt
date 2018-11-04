@@ -42,7 +42,7 @@ add_executable(
 )
 
 #Passing by Lex files and generate C files:
-#Not the best idea because off lex uses global variables:
+#Not the best idea because of lex uses global variables:
 
 #if (FLEX_FOUND)
 #    message(STATUS "flex is found")
