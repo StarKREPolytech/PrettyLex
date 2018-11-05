@@ -98,6 +98,7 @@ lex_EXTERNAL_OBJECTS =
 lex: CMakeFiles/lex.dir/main/main.c.o
 lex: CMakeFiles/lex.dir/generated/lexer.c.o
 lex: CMakeFiles/lex.dir/build.make
+lex: libs/lib4aio/liblib4aio.a
 lex: CMakeFiles/lex.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable lex"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lex.dir/link.txt --verbose=$(VERBOSE)

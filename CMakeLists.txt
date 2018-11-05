@@ -4,9 +4,12 @@ project(lex C)
 
 set(CMAKE_C_STANDARD 11)
 
-include_directories(${CMAKE_CURRENT_BINARY_DIR})
-
 include_directories(main)
+
+include_directories(libs)
+
+#lib4aio:
+add_subdirectory(libs/lib4aio)
 
 #Find lex:
 FIND_PACKAGE(FLEX REQUIRED)
@@ -33,39 +36,12 @@ endif ()
 
 add_executable(
         lex
-        #headers:
-        main/header.h
-        #source:
+        #project:
+        main/lexer.h
         main/main.c
         #generated lex file:
         generated/lexer.c
-        )
+)
 
-#Passing by Lex files and generate C files:
-#Not the best idea because of lex uses global variables:
-
-#if (FLEX_FOUND)
-#    message(STATUS "flex is found")
-#    #Create "flexout" variable for keeping generated C Lex files in the path:
-#    set(flexout ../generated)
-#    #Create "lexdir" variable for getting *.l Lex files in the path:
-#    file(GLOB lexdir lex/*.l)
-#    #Iterates in *.l files:
-#    foreach (lexfile ${lexdir})
-#        #Invoke Lex programm under each file:
-#        get_filename_component(name ${lexfile} NAME)
-#        message(STATUS "LEX: ${lexfile}")
-#        message(STATUS "NAME: ${lexfile}")
-#        add_custom_command(
-#                OUTPUT ${flexout}
-#                COMMAND ${FLEX_EXECUTABLE}
-#                #Collect in the generated path:
-#                --outfile=${flexout}/${name}
-#                ${lexfile}
-#                #Print pretty message about Lex file name:
-#                COMMENT "Generate ${lexfile}"
-#        )
-#        string(".l" ".c" generatedFile ${lexfile})
-#        add_executable(${generatedFile})
-#    endforeach (lexfile ${lexdir})
-#endif ()
+#link lib4aio:
+target_link_libraries(lex lib4aio)

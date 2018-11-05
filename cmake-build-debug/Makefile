@@ -123,6 +123,19 @@ lex/fast:
 	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/build
 .PHONY : lex/fast
 
+#=============================================================================
+# Target rules for targets named lib4aio
+
+# Build rule for target.
+lib4aio: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib4aio
+.PHONY : lib4aio
+
+# fast build rule for target.
+lib4aio/fast:
+	$(MAKE) -f libs/lib4aio/CMakeFiles/lib4aio.dir/build.make libs/lib4aio/CMakeFiles/lib4aio.dir/build
+.PHONY : lib4aio/fast
+
 generated/lexer.o: generated/lexer.c.o
 
 .PHONY : generated/lexer.o
@@ -186,6 +199,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lex"
+	@echo "... lib4aio"
 	@echo "... generated/lexer.o"
 	@echo "... generated/lexer.i"
 	@echo "... generated/lexer.s"

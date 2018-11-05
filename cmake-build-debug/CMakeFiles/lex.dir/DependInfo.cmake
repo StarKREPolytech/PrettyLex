@@ -11,12 +11,13 @@ set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "."
   "../main"
+  "../libs"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/CMakeFiles/lib4aio.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

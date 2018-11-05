@@ -1,3 +1,6 @@
 /home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/CMakeFiles/lex.dir
+/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/CMakeFiles/edit_cache.dir
+/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/CMakeFiles/rebuild_cache.dir
+/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/CMakeFiles/lib4aio.dir

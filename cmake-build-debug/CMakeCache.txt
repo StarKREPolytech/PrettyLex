@@ -248,6 +248,12 @@ lex_BINARY_DIR:STATIC=/home/ihb/IgorProjects/education/translatingSystems/lexExm
 lex_SOURCE_DIR:STATIC=/home/ihb/IgorProjects/education/translatingSystems/lexExmpl
 
 //Value Computed by CMake
+lib4aio_BINARY_DIR:STATIC=/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio
+
+//Value Computed by CMake
+lib4aio_SOURCE_DIR:STATIC=/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/libs/lib4aio
+
+//Value Computed by CMake
 untitled_BINARY_DIR:STATIC=/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug
 
 //Value Computed by CMake
@@ -360,7 +366,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

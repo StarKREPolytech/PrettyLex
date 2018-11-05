@@ -5,7 +5,7 @@
 		<Option title="lex"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\lib4aio\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug"/>
@@ -44,8 +44,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug"/>
 					<Add directory="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main"/>
+					<Add directory="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/libs"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
@@ -66,8 +66,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug"/>
 					<Add directory="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main"/>
+					<Add directory="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/libs"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
@@ -81,6 +81,50 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="lib4aio">
+				<Option output="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/liblib4aio.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main"/>
+					<Add directory="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/libs"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/Makefile&quot;  VERBOSE=1 lib4aio"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib4aio/fast">
+				<Option output="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/liblib4aio.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main"/>
+					<Add directory="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/libs"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/Makefile&quot;  VERBOSE=1 lib4aio/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/libs/lib4aio/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/generated/lexer.c">
 			<Option target="lex"/>
@@ -88,7 +132,19 @@
 		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/generated/lexer.c.rule">
 			<Option target="lex"/>
 		</Unit>
-		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/header.h">
+		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/libs/lib4aio/common/common.c">
+			<Option target="lib4aio"/>
+		</Unit>
+		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/libs/lib4aio/common/common.h">
+			<Option target="lib4aio"/>
+		</Unit>
+		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/libs/lib4aio/str_builder/str_builder.c">
+			<Option target="lib4aio"/>
+		</Unit>
+		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/libs/lib4aio/str_builder/str_builder.h">
+			<Option target="lib4aio"/>
+		</Unit>
+		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/lexer.h">
 			<Option target="lex"/>
 		</Unit>
 		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/main.c">
@@ -96,6 +152,9 @@
 		</Unit>
 		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/libs/lib4aio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libs\lib4aio\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
