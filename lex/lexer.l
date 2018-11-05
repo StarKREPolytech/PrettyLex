@@ -3,9 +3,8 @@
 %}
 
 %%
-[-|+]*[0-9]*[.]+[0-9]+E[+-]*[0-9]{2,} handle_number(yytext, yyleng);
-.                                     printf("DOUBLE POINT!\n");
-\n                                   ;
+[-+]*[.]+[0-9.]+[E.][+-.]*[0-9.]*       handle_number(yytext, yyleng);
+[ \n]                                   ;
 %%
 
 int yywrap(void)

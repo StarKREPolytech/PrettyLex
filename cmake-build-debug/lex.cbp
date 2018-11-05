@@ -132,12 +132,6 @@
 		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/generated/lexer.c.rule">
 			<Option target="lex"/>
 		</Unit>
-		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/libs/lib4aio/common/common.c">
-			<Option target="lib4aio"/>
-		</Unit>
-		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/libs/lib4aio/common/common.h">
-			<Option target="lib4aio"/>
-		</Unit>
 		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/libs/lib4aio/str_builder/str_builder.c">
 			<Option target="lib4aio"/>
 		</Unit>

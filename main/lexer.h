@@ -7,6 +7,6 @@ extern int yylex();
 
 extern struct _IO_FILE *yyin;
 
-void handle_number(const char *string, const unsigned length);
+void handle_number(const char *semi_log_number, const unsigned length);
 
 #endif //LEXER_H

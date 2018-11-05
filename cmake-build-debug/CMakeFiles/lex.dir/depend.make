@@ -4,7 +4,6 @@
 CMakeFiles/lex.dir/generated/lexer.c.o: ../main/lexer.h
 CMakeFiles/lex.dir/generated/lexer.c.o: ../generated/lexer.c
 
-CMakeFiles/lex.dir/main/main.c.o: ../libs/lib4aio/common/common.h
 CMakeFiles/lex.dir/main/main.c.o: ../libs/lib4aio/str_builder/str_builder.h
 CMakeFiles/lex.dir/main/main.c.o: ../main/lexer.h
 CMakeFiles/lex.dir/main/main.c.o: ../main/main.c

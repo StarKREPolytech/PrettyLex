@@ -5,7 +5,6 @@ CMakeFiles/lex.dir/generated/lexer.c.o
  ../main/lexer.h
  /home/ihb/IgorProjects/education/translatingSystems/lexExmpl/generated/lexer.c
 CMakeFiles/lex.dir/main/main.c.o
- ../libs/lib4aio/common/common.h
  ../libs/lib4aio/str_builder/str_builder.h
  /home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/lexer.h
  /home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/main.c
