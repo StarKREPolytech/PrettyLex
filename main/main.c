@@ -109,12 +109,16 @@ char *to_semi_log_form(const char *number, const unsigned length)
         append_char_to_str_builder(builder, MINUS);
     }
     //Add power:
-    const unsigned power = fsm.power;
+    unsigned power = fsm.power;
     if (power < 10) {
         const char power_char = (const char) (power + '0');
         append_char_to_str_builder(builder, ZERO);
         append_char_to_str_builder(builder, power_char);
     } else {
+        //Round under two digits:
+        while (power > 100){
+            power /= 10;
+        }
         char *power_string = int_to_string(power);
         append_string_to_str_builder(builder, power_string);
         free(power_string);
