@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-../main/myscanner.h
+../main/header.h
+stdlib.h
+-
 
-/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/generated/lexer.c
+/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/main.c
 stdio.h
+-
+header.h
+-
+assert.h
+-
+stdbool.h
 -
 string.h
 -
-errno.h
--
-stdlib.h
--
-inttypes.h
--
-myscanner.h
--
-unistd.h
+ctype.h
 -
 

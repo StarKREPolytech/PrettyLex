@@ -9,12 +9,12 @@
 
 extern int yylex();
 
-extern char *yytext;
-
-extern size_t yyleng;
-
 extern struct _IO_FILE *yyin;
 
-void put_word(char *word);
+extern unsigned from_count;
+
+extern unsigned select_count;
+
+extern unsigned where_count;
 
 #endif //HEADER_H
