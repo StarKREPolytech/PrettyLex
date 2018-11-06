@@ -10,17 +10,19 @@
 stdlib.h
 -
 
-/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/main.c
+/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/generated/lexer.c
 stdio.h
--
-header.h
--
-assert.h
--
-stdbool.h
 -
 string.h
 -
-ctype.h
+errno.h
+-
+stdlib.h
+-
+inttypes.h
+-
+header.h
+-
+unistd.h
 -
 
