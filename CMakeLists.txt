@@ -34,7 +34,7 @@ endif ()
 add_executable(
         lex
         #headers:
-        main/header.h
+        main/lexer.h
         #source:
         main/main.c
         #generated lex file:

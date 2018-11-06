@@ -457,7 +457,7 @@ int yy_flex_debug = 0;
 char *yytext;
 #line 1 "../lex/lexer.l"
 #line 2 "../lex/lexer.l"
-    #include <header.h>
+    #include <lexer.h>
 #line 462 "../generated/lexer.c"
 
 #define INITIAL 0
@@ -734,7 +734,7 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 YY_RULE_SETUP
 #line 6 "../lex/lexer.l"
-check_word(yytext);
+check_word(yytext, yyleng);
 	YY_BREAK
 case 2:
 /* rule 2 can match eol */

@@ -1,9 +1,9 @@
 %{
-    #include <header.h>
+    #include <lexer.h>
 %}
 
 %%
-[a-zA-Z0-9]{2,}     check_word(yytext);
+[a-zA-Z0-9]{2,}     check_word(yytext, yyleng);
 .|\n                ;
 %%
 

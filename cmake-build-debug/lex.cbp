@@ -88,7 +88,7 @@
 		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/generated/lexer.c.rule">
 			<Option target="lex"/>
 		</Unit>
-		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/header.h">
+		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/lexer.h">
 			<Option target="lex"/>
 		</Unit>
 		<Unit filename="/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/main.c">

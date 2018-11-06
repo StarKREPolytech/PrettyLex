@@ -1,10 +1,10 @@
+//native:
 #include <stdio.h>
-#include <header.h>
+#include <string.h>
 #include <assert.h>
 #include <stdbool.h>
-#include <string.h>
-
-#define CHUNK_SIZE 1024
+//project:
+#include <lexer.h>
 
 static FILE *output_file = NULL;
 
@@ -13,30 +13,35 @@ static void print_result(const char *word, const char letter, const unsigned tim
     fprintf(output_file, "%s %c %d\n", word, letter, times);
 }
 
-void check_word(const char *word)
+void check_word(const char *word, const unsigned length)
 {
-    if (yyleng > 1) {
-        const size_t last = yyleng - 1;
-        unsigned times = 1;
-        char previous_char = word[0];
-        for (unsigned i = 1; i <= last; ++i) {
-            const char current_symbol = word[i];
-            if (current_symbol == previous_char) {
-                times++;
-                if (i == last) {
-                    print_result(word, current_symbol, times);
-                }
-            } else {
-                if (times > 1) {
-                    print_result(word, previous_char, times);
-                }
-                //Reset:
-                previous_char = current_symbol;
-                times = 1;
+    assert(length > 1);
+    const size_t last = length - 1;
+    unsigned times = 1;
+    char previous_char = word[0];
+    for (unsigned i = 1; i <= last; ++i) {
+        const char current_symbol = word[i];
+        if (current_symbol == previous_char) {
+            times++;
+            if (i == last) {
+                print_result(word, current_symbol, times);
             }
+        } else {
+            if (times > 1) {
+                print_result(word, previous_char, times);
+            }
+            //Reset:
+            previous_char = current_symbol;
+            times = 1;
         }
     }
 }
+
+#define CHUNK_SIZE 1024
+
+#define READING_MODE "r"
+
+#define WRITING_MODE "w"
 
 static void assert_file_content(const char *output_path)
 {
@@ -88,7 +93,7 @@ int main(int argc, char *argv[])
         //Make lexing:
         while (yylex());
         fclose(output_file);
-        //assert_file_content result:
+        //Check result:
         assert_file_content(output_path);
     } else {
         perror("Expected <input> <output> files!\n");
