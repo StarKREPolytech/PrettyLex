@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../libs/lib4aio/str_builder/str_builder.h
-
 ../main/lexer.h
 stdlib.h
 -
@@ -27,26 +25,4 @@ lexer.h
 -
 unistd.h
 -
-
-/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/lexer.h
-stdlib.h
--
-
-/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/main.c
-ctype.h
--
-stdio.h
--
-stdlib.h
--
-assert.h
--
-stdbool.h
--
-lib4aio/str_builder/str_builder.h
--
-string.h
--
-lexer.h
-/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/lexer.h
 

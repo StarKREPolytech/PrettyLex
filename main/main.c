@@ -50,7 +50,7 @@ char *from_semi_log_form(const char *number, const unsigned length)
     }
     //Check dot:
     if (number[left_border++] != DOT) {
-        throw_error("Expected dot!");
+        throw_error("Not normalized value");
     }
     //Extract power:
     unsigned right_border = length - 1;
