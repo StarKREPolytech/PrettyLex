@@ -136,13 +136,6 @@ char *to_semi_log_form(const char *number, const unsigned length)
 
 static FILE *output_file = NULL;
 
-//static void assert_word_count()
-//{
-//    assert(from_count == 2);
-//    assert(select_count == 1);
-//    assert(where_count == 2);
-//}
-
 void handle_number(const char *string, const unsigned length)
 {
     char *semi_log_number = to_semi_log_form(string, length);
@@ -170,6 +163,7 @@ static void assert_file_content(const char *output_path)
             buffer,
             "-.123456E+04\n"
             ".4321E-03\n"
+            "+.534E+01\n"
     ) == 0
     );
     fclose(file);
