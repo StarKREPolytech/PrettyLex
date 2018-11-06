@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main 
+C_INCLUDES = -I/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug -I/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main 
 

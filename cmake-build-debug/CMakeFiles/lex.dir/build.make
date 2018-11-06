@@ -61,18 +61,18 @@ include CMakeFiles/lex.dir/flags.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generated lexer"
 	/usr/bin/flex --outfile=../generated/lexer.c ../lex/lexer.l
 
-CMakeFiles/lex.dir/main/myscanner.c.o: CMakeFiles/lex.dir/flags.make
-CMakeFiles/lex.dir/main/myscanner.c.o: ../main/myscanner.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lex.dir/main/myscanner.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lex.dir/main/myscanner.c.o   -c /home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/myscanner.c
+CMakeFiles/lex.dir/main/main.c.o: CMakeFiles/lex.dir/flags.make
+CMakeFiles/lex.dir/main/main.c.o: ../main/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ihb/IgorProjects/education/translatingSystems/lexExmpl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lex.dir/main/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lex.dir/main/main.c.o   -c /home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/main.c
 
-CMakeFiles/lex.dir/main/myscanner.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lex.dir/main/myscanner.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/myscanner.c > CMakeFiles/lex.dir/main/myscanner.c.i
+CMakeFiles/lex.dir/main/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lex.dir/main/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/main.c > CMakeFiles/lex.dir/main/main.c.i
 
-CMakeFiles/lex.dir/main/myscanner.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lex.dir/main/myscanner.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/myscanner.c -o CMakeFiles/lex.dir/main/myscanner.c.s
+CMakeFiles/lex.dir/main/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lex.dir/main/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ihb/IgorProjects/education/translatingSystems/lexExmpl/main/main.c -o CMakeFiles/lex.dir/main/main.c.s
 
 CMakeFiles/lex.dir/generated/lexer.c.o: CMakeFiles/lex.dir/flags.make
 CMakeFiles/lex.dir/generated/lexer.c.o: ../generated/lexer.c
@@ -89,13 +89,13 @@ CMakeFiles/lex.dir/generated/lexer.c.s: cmake_force
 
 # Object files for target lex
 lex_OBJECTS = \
-"CMakeFiles/lex.dir/main/myscanner.c.o" \
+"CMakeFiles/lex.dir/main/main.c.o" \
 "CMakeFiles/lex.dir/generated/lexer.c.o"
 
 # External object files for target lex
 lex_EXTERNAL_OBJECTS =
 
-lex: CMakeFiles/lex.dir/main/myscanner.c.o
+lex: CMakeFiles/lex.dir/main/main.c.o
 lex: CMakeFiles/lex.dir/generated/lexer.c.o
 lex: CMakeFiles/lex.dir/build.make
 lex: CMakeFiles/lex.dir/link.txt

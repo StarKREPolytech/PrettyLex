@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-../main/myscanner.h
+../main/header.h
+stdlib.h
+-
 
 /home/ihb/IgorProjects/education/translatingSystems/lexExmpl/generated/lexer.c
 stdio.h
@@ -19,7 +21,7 @@ stdlib.h
 -
 inttypes.h
 -
-myscanner.h
+header.h
 -
 unistd.h
 -

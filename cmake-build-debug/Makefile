@@ -150,32 +150,32 @@ generated/lexer.c.s:
 	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/generated/lexer.c.s
 .PHONY : generated/lexer.c.s
 
-main/myscanner.o: main/myscanner.c.o
+main/main.o: main/main.c.o
 
-.PHONY : main/myscanner.o
+.PHONY : main/main.o
 
 # target to build an object file
-main/myscanner.c.o:
-	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/main/myscanner.c.o
-.PHONY : main/myscanner.c.o
+main/main.c.o:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/main/main.c.o
+.PHONY : main/main.c.o
 
-main/myscanner.i: main/myscanner.c.i
+main/main.i: main/main.c.i
 
-.PHONY : main/myscanner.i
+.PHONY : main/main.i
 
 # target to preprocess a source file
-main/myscanner.c.i:
-	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/main/myscanner.c.i
-.PHONY : main/myscanner.c.i
+main/main.c.i:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/main/main.c.i
+.PHONY : main/main.c.i
 
-main/myscanner.s: main/myscanner.c.s
+main/main.s: main/main.c.s
 
-.PHONY : main/myscanner.s
+.PHONY : main/main.s
 
 # target to generate assembly for a file
-main/myscanner.c.s:
-	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/main/myscanner.c.s
-.PHONY : main/myscanner.c.s
+main/main.c.s:
+	$(MAKE) -f CMakeFiles/lex.dir/build.make CMakeFiles/lex.dir/main/main.c.s
+.PHONY : main/main.c.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo "... generated/lexer.o"
 	@echo "... generated/lexer.i"
 	@echo "... generated/lexer.s"
-	@echo "... main/myscanner.o"
-	@echo "... main/myscanner.i"
-	@echo "... main/myscanner.s"
+	@echo "... main/main.o"
+	@echo "... main/main.i"
+	@echo "... main/main.s"
 .PHONY : help
 
 
