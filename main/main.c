@@ -36,12 +36,13 @@ char *from_semi_log_form(const char *number, const unsigned length)
     assert(length >= 5);
     str_builder *builder = new_str_builder();
     unsigned left_border = 0;
-    const char first_symbol = number[left_border++];
+    const char first_symbol = number[0];
     //Check first symbol:
     if (is_sign(first_symbol)) {
+        left_border++;
         //Put sign:
         append_char_to_str_builder(builder, first_symbol);
-        const char second_symbol = number[left_border];
+        const char second_symbol = number[1];
         //Check the second symbol:
         if (is_sign(second_symbol)) {
             throw_error("Two sign in a row!");
@@ -145,6 +146,7 @@ static void assert_file_content(const char *output_path)
             buffer,
             "-1234.56\n"
             "+0.0012\n"
+            "0.0004321\n"
     ) == 0
     );
     fclose(file);

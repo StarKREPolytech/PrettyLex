@@ -4,7 +4,7 @@
 
 %%
 [-+]*[.]+[0-9.]+[E.][+-.]*[0-9.]*       handle_number(yytext, yyleng);
-[ \n]                                   ;
+.|\n                                    ;
 %%
 
 int yywrap(void)
